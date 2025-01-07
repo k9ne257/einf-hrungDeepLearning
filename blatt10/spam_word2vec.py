@@ -93,7 +93,7 @@ def train_encoder_and_task_head(encoder, task_head, dataloader, loss_fn, optimiz
 
 def calculate_accuracy(output, labels):
     predictions = output.round() # Rundet die Ausgabe auf 0 oder 1
-    correct = (predictions == labels).float() # Konvertiert in float für die␣
+    correct = (predictions == labels).float() # Konvertiert in float für die␣ 0
     ↪Division
     accuracy = correct.sum() / len(correct)
     return accuracy
